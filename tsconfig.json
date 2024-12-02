@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["es6", "dom", "dom.iterable", "esnext", "scripthost"],
+    "typeRoots": ["./node_modules/phaser/types"],
+    "types": ["Phaser"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": "src", // Устанавливаем базовую директорию
+    "paths": {
+      "*": ["*"] // Указывает, что все пути внутри src можно использовать без '../'
+    }
+  },
+  "include": ["src", "global.d.ts"],
+  "exclude": ["node_modules"],
+}
